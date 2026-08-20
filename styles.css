@@ -44,6 +44,7 @@ body {
 .logo {
   font-weight: 700;
   letter-spacing: 0.02em;
+  color: var(--text);
 }
 
 .menu-toggle {
@@ -90,24 +91,196 @@ main {
   padding: 5rem 0 4rem;
 }
 
-.eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.75rem;
-  color: var(--accent);
-  font-family: system-ui, sans-serif;
+.brand {
+  margin: 0;
+  font-size: clamp(2.4rem, 7vw, 4.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  font-weight: 700;
 }
 
 h1 {
-  font-size: clamp(2rem, 5vw, 3.4rem);
-  line-height: 1.15;
-  margin: 0.4rem 0 1rem;
+  font-size: clamp(1.35rem, 3.2vw, 1.9rem);
+  line-height: 1.35;
+  font-weight: 400;
+  margin: 1rem 0 0;
+  max-width: 34rem;
+  color: var(--muted);
 }
 
-.lede,
-section p {
+.trusted h2 {
+  margin: 0 0 1.75rem;
+  font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+  max-width: 28rem;
+}
+
+.cred-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem 2rem;
+}
+
+.cred-value {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.35rem, 2.8vw, 1.85rem);
+  line-height: 1.15;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+}
+
+.cred-text {
+  margin: 0;
+  color: var(--muted);
+  max-width: 28rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.prose p,
+.prose li,
+.faq summary {
   color: var(--muted);
   max-width: 40rem;
+}
+
+.prose .lead {
+  color: var(--text);
+  font-size: 1.15rem;
+}
+
+.prose .emphasis {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.visual-list {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 1rem 1.25rem;
+  max-width: none;
+}
+
+.visual-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin: 0;
+  max-width: none;
+  color: var(--muted);
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.visual-icon {
+  flex: 0 0 auto;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.visual-icon svg {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.journey-list,
+.story-list,
+.result-list,
+.question-list {
+  grid-template-columns: 1fr;
+  max-width: 40rem;
+}
+
+.story-list {
+  position: relative;
+  gap: 0.9rem;
+}
+
+.story-list li {
+  position: relative;
+}
+
+.offer {
+  margin-top: 2.25rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line);
+}
+
+.offer:first-of-type {
+  margin-top: 2rem;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(10rem, 15rem) minmax(0, 1fr);
+  gap: 1.75rem 2rem;
+  align-items: start;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.about-photo {
+  width: 100%;
+  max-width: 15rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 1rem;
+  border: 1px solid var(--line);
+  display: block;
+}
+
+.about-copy p:first-child {
+  margin-top: 0;
+}
+
+.faq details {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+  max-width: 40rem;
+}
+
+.faq details:first-of-type {
+  border-top: 1px solid var(--line);
+  margin-top: 1.25rem;
+}
+
+.faq summary {
+  cursor: pointer;
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: "+";
+  float: right;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.faq details[open] summary::after {
+  content: "–";
+}
+
+.faq details p {
+  margin: 0.85rem 0 0;
 }
 
 .button {
@@ -137,25 +310,9 @@ h2 {
   margin-top: 0;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
-  gap: 1rem;
-}
-
-.cards article {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 1.2rem;
-}
-
-.cards p {
-  margin-bottom: 0;
-}
-
 h3 {
   margin-top: 0;
+  margin-bottom: 0.75rem;
 }
 
 .contact-form {
@@ -277,12 +434,29 @@ footer {
     border-top: 1px solid var(--line);
   }
 
+  .brand {
+    font-size: clamp(2rem, 11vw, 2.8rem);
+  }
+
   .hero {
     padding: 2.5rem 0 2rem;
   }
 
   section {
     padding: 1.75rem 0;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    max-width: 12rem;
+  }
+
+  .cred-grid {
+    grid-template-columns: 1fr;
+    gap: 1.35rem;
   }
 
   .contact-form {
