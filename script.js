@@ -14,7 +14,7 @@ if (nav && menuToggle) {
     menuToggle.textContent = open ? "Close" : "Menu";
   });
 
-  nav.querySelectorAll("nav a").forEach((link) => {
+  nav.querySelectorAll("nav a, .nav-actions a").forEach((link) => {
     link.addEventListener("click", () => {
       nav.classList.remove("open");
       menuToggle.setAttribute("aria-expanded", "false");
@@ -23,10 +23,42 @@ if (nav && menuToggle) {
   });
 }
 
+window.addEventListener(
+  "scroll",
+  () => {
+    if (!nav) return;
+    nav.classList.toggle("scrolled", window.scrollY > 8);
+  },
+  { passive: true }
+);
+
+const revealEls = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window && revealEls.length) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+  );
+  revealEls.forEach((el) => observer.observe(el));
+} else {
+  revealEls.forEach((el) => el.classList.add("visible"));
+}
+
 const emailLink = document.getElementById("contact-email-link");
 if (emailLink) {
   emailLink.href = `mailto:${CONTACT_EMAIL}`;
   emailLink.textContent = CONTACT_EMAIL;
+}
+
+const footerEmail = document.getElementById("footer-email");
+if (footerEmail) {
+  footerEmail.href = `mailto:${CONTACT_EMAIL}`;
 }
 
 const form = document.getElementById("contact-form");

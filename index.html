@@ -3,753 +3,441 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#0f1412" />
+    <meta name="theme-color" content="#f4f6f4" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta
       name="description"
       content="Techo Consulting builds sales funnels and marketing automations that connect every step of your customer journey."
     />
-    <title>Techo Consulting Inc.</title>
+    <title>Techo Consulting — Funnels & Automations That Connect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650;12..96,800&family=Figtree:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="nav">
-      <a class="logo" href="#home">Techo Consulting</a>
+      <a class="logo" href="#home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        Techo
+      </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         Menu
       </button>
       <nav id="site-nav">
-        <a href="#what-we-build">What We Build</a>
-        <a href="#how-it-works">How It Works</a>
-        <a href="#about">Why Me</a>
+        <a href="#what-we-build">Product</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#about">Company</a>
         <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
       </nav>
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="#about">Why Techo</a>
+        <a class="btn btn-primary" href="#contact">Book a call</a>
+      </div>
     </header>
 
     <main>
       <section id="home" class="hero">
-        <p class="brand">Techo Consulting Inc.</p>
-        <h1>Build funnels that bring in customers. Automate the work that happens after.</h1>
-        <a class="button" href="#contact">Give us an inquiry</a>
+        <div class="hero-copy reveal">
+          <p class="brand">Techo Consulting</p>
+          <h1>Funnels that bring customers in.<br />Automations that keep them moving.</h1>
+          <p class="hero-sub">
+            Connect every step of your customer journey—from first click to long-term
+            customer—so you generate more revenue without creating more manual work.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary btn-lg" href="#contact">Book a call</a>
+            <a class="btn btn-ghost btn-lg" href="#how-it-works">See how it works</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="product-stage">
+            <div class="product-window">
+              <div class="product-chrome">
+                <span></span><span></span><span></span>
+                <p>Customer journey · Live</p>
+              </div>
+              <div class="product-body">
+                <aside class="product-rail">
+                  <p class="rail-label">Pipeline</p>
+                  <ul>
+                    <li class="active">Discovery</li>
+                    <li>Interest</li>
+                    <li>Decision</li>
+                    <li>Customer</li>
+                    <li>Retention</li>
+                  </ul>
+                </aside>
+                <div class="product-main">
+                  <div class="flow-card flow-a">
+                    <span class="flow-tag">Landing</span>
+                    <strong>Lead magnet captured</strong>
+                    <p>Guide download → CRM contact created</p>
+                  </div>
+                  <div class="flow-card flow-b">
+                    <span class="flow-tag">Automation</span>
+                    <strong>Welcome sequence sent</strong>
+                    <p>3 emails over 5 days · 94% delivered</p>
+                  </div>
+                  <div class="flow-card flow-c">
+                    <span class="flow-tag">Booking</span>
+                    <strong>Consultation scheduled</strong>
+                    <p>Calendar synced · Team notified</p>
+                  </div>
+                  <div class="metric-row">
+                    <div>
+                      <span>Follow-up rate</span>
+                      <strong>100%</strong>
+                    </div>
+                    <div>
+                      <span>Manual tasks</span>
+                      <strong>−68%</strong>
+                    </div>
+                    <div>
+                      <span>Time to reply</span>
+                      <strong>&lt;2m</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="stage-glow"></div>
+          </div>
+        </div>
       </section>
 
       <section id="trusted" class="trusted">
-        <h2>Trusted by businesses generating millions</h2>
-        <div class="cred-grid">
+        <p class="trusted-label reveal">Trusted by businesses generating millions</p>
+        <div class="cred-row reveal">
           <div class="cred">
             <p class="cred-value">5+ Years</p>
-            <p class="cred-text">Working inside the information product industry.</p>
+            <p class="cred-text">Inside the information product industry</p>
           </div>
           <div class="cred">
             <p class="cred-value">$5M+</p>
-            <p class="cred-text">
-              Revenue generated through funnels and customer journeys I’ve helped build
-              and optimize.
-            </p>
+            <p class="cred-text">Revenue influenced through funnels & journeys</p>
           </div>
           <div class="cred">
-            <p class="cred-value">3M+/Year Agency</p>
-            <p class="cred-text">
-              Co-founded Sales Possible and later served as Director of Operations and
-              Marketing Consultant, helping build the systems behind a multi-million
-              dollar sales organization.
-            </p>
+            <p class="cred-value">$3M+/yr</p>
+            <p class="cred-text">Agency systems built at Sales Possible</p>
           </div>
           <div class="cred">
-            <p class="cred-value">Enterprise-Level Experience</p>
-            <p class="cred-text">
-              Supported industry leaders like Dan Lok through marketing operations,
-              funnel implementation, and project management.
-            </p>
+            <p class="cred-value">Enterprise</p>
+            <p class="cred-text">Supported leaders like Dan Lok</p>
           </div>
         </div>
       </section>
 
-      <section id="problem" class="prose">
-        <h2>Most businesses don’t have a marketing problem.</h2>
-        <p class="lead">They have a disconnect.</p>
-        <p>Their website collects leads, but no one follows up consistently.</p>
-        <p>Their CRM has customer information, but it’s never up to date.</p>
-        <p>Their emails are written manually.</p>
-        <p>Appointments require back-and-forth.</p>
-        <p>Customers receive different experiences depending on who’s working that day.</p>
-        <p>The individual tools aren’t the problem.</p>
-        <p class="emphasis">The way they work together is.</p>
-        <p>
-          At Techo Consulting, we build sales funnels and marketing automations that
-          connect every step of your customer journey. From the first click to becoming
-          a long-term customer, so your business can generate more revenue without
-          creating more manual work.
-        </p>
-        <a class="button" href="#contact">Give us an inquiry</a>
+      <section id="problem" class="feature-hero">
+        <div class="feature-hero-copy reveal">
+          <h2>Most businesses don’t have a marketing problem.<br /><em>They have a disconnect.</em></h2>
+          <p>
+            Websites collect leads that never get followed up. CRMs go stale. Emails are
+            written by hand. Appointments bounce between inboxes. Customers get a
+            different experience depending on who’s working that day.
+          </p>
+          <p class="emphasis">The tools aren’t the problem. The way they work together is.</p>
+          <a class="btn btn-primary" href="#contact">Fix the disconnect</a>
+        </div>
+        <div class="feature-pills reveal">
+          <article class="pill">
+            <span class="pill-icon" aria-hidden="true">◎</span>
+            <h3>Online, hybrid, or offline journeys</h3>
+            <p>We map the full path—from discovery through retention—and connect each step.</p>
+          </article>
+          <article class="pill">
+            <span class="pill-icon" aria-hidden="true">⇄</span>
+            <h3>Human-like follow-up, automated</h3>
+            <p>Sequences, CRM updates, and bookings that feel personal without the busywork.</p>
+          </article>
+          <article class="pill">
+            <span class="pill-icon" aria-hidden="true">◈</span>
+            <h3>Built to stay private & dependable</h3>
+            <p>Systems your team can trust—organized, documented, and easy to operate as you grow.</p>
+          </article>
+        </div>
       </section>
 
-      <section id="what-we-build" class="prose">
-        <h2>What We Build</h2>
-        <p>
-          Every business is different, but most customer journeys follow a similar path.
-        </p>
-        <ol class="visual-list journey-list">
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <circle cx="11" cy="11" r="6" />
-                <path d="M20 20l-3.5-3.5" />
-              </svg>
-            </span>
-            <span>Someone discovers your business.</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 5.6-7 10-7 10z" />
-              </svg>
-            </span>
-            <span>They show interest.</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <circle cx="9" cy="19" r="1.5" />
-                <circle cx="17" cy="19" r="1.5" />
-                <path d="M3 4h2l2.4 10.2a1.5 1.5 0 0 0 1.5 1.2h7.8a1.5 1.5 0 0 0 1.4-1l1.6-6.4H7" />
-              </svg>
-            </span>
-            <span>They decide whether to buy.</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <circle cx="12" cy="8" r="3.2" />
-                <path d="M5 19c1.5-3.2 4-4.8 7-4.8s5.5 1.6 7 4.8" />
-              </svg>
-            </span>
-            <span>They become a customer.</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M4 12h4l2-5 3 10 2-5h5" />
-              </svg>
-            </span>
-            <span>They stay engaged.</span>
-          </li>
+      <section class="quote-band">
+        <blockquote class="reveal">
+          <p>
+            “The best systems let us be present while they handle everything else. Techo
+            builds the invisible layer—clarity, context, and follow-through—so revenue
+            doesn’t depend on who remembered to follow up.”
+          </p>
+          <footer>
+            <img src="felix.png" alt="" width="48" height="48" />
+            <div>
+              <strong>Felix Li</strong>
+              <span>Founder, Techo Consulting</span>
+            </div>
+          </footer>
+        </blockquote>
+      </section>
+
+      <section id="how-it-works" class="split-feature">
+        <div class="split-copy reveal">
+          <h2>Ask anything about your customer journey.</h2>
+          <p>
+            Where are people dropping off? What should happen after a form fill? Which
+            steps should be automated—and which should stay human? We design the answers
+            into the system itself.
+          </p>
+        </div>
+        <div class="ask-panel reveal" aria-hidden="true">
+          <div class="ask-bubble">Where do leads stall after the webinar?</div>
+          <div class="ask-bubble reply">
+            38% never book. Trigger a 48-hour SMS + calendar link for non-bookers, then
+            route warm replies to sales.
+          </div>
+          <div class="ask-bubble">Can onboarding start the moment they pay?</div>
+          <div class="ask-bubble reply">
+            Yes—CRM tag, welcome pack, and kickoff booking fire automatically on purchase.
+          </div>
+        </div>
+      </section>
+
+      <section id="what-we-build" class="workflow">
+        <div class="section-head reveal">
+          <h2>Fits into your workflow</h2>
+          <p>
+            We build sales funnels and marketing automations that connect—landing pages,
+            CRMs, email, calendars, and AI-assisted workflows working as one system.
+          </p>
+        </div>
+        <div class="workflow-grid reveal">
+          <article>
+            <h3>Sales Funnels</h3>
+            <p>Landing pages, lead magnets, sales pages, webinars, applications, checkout, and course funnels.</p>
+          </article>
+          <article>
+            <h3>Marketing Automation</h3>
+            <p>Email sequences, nurturing, CRM sync, booking, onboarding, notifications, and follow-up campaigns.</p>
+          </article>
+          <article>
+            <h3>Funnel Improvements</h3>
+            <p>Find drop-offs, remove friction, and add automation where it removes unnecessary work.</p>
+          </article>
+        </div>
+        <div class="tool-strip reveal" aria-label="Tools we work with">
+          <span>GoHighLevel</span>
+          <span>HubSpot</span>
+          <span>ActiveCampaign</span>
+          <span>Notion</span>
+          <span>Calendly</span>
+          <span>Stripe</span>
+        </div>
+      </section>
+
+      <section id="story" class="story">
+        <div class="section-head reveal">
+          <h2>How everything works together</h2>
+          <p>A great funnel doesn’t stop when someone fills out a form. It continues through every interaction afterward.</p>
+        </div>
+        <ol class="story-steps reveal">
+          <li><span>01</span> A visitor downloads your guide.</li>
+          <li><span>02</span> They immediately receive a welcome email.</li>
+          <li><span>03</span> Automated emails introduce your business over the next few days.</li>
+          <li><span>04</span> When ready, they book a consultation.</li>
+          <li><span>05</span> Your CRM creates their contact automatically.</li>
+          <li><span>06</span> Your calendar confirms—and your team gets notified.</li>
+          <li><span>07</span> After they buy, onboarding emails send themselves.</li>
         </ol>
-        <p>We help make each step work together.</p>
-
-        <div class="offer">
-          <h3>Sales Funnels</h3>
-          <p>We build funnels that guide potential customers toward taking action.</p>
-          <ul class="visual-list">
-            <li>
-              <span class="visual-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <rect x="4" y="5" width="16" height="14" rx="1.5" />
-                  <path d="M4 9h16" />
-                </svg>
-              </span>
-              <span>Landing pages</span>
-            </li>
-            <li>
-              <span class="visual-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <path d="M8 4h8l2 6-6 9-6-9 2-6z" />
-                  <path d="M8 10h8" />
-                </svg>
-              </span>
-              <span>Lead magnets</span>
-            </li>
-            <li>
-              <span class="visual-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <path d="M7 4h10v16H7z" />
-                  <path d="M10 8h4M10 12h4M10 16h2" />
-                </svg>
-              </span>
-              <span>Sales pages</span>
-            </li>
-            <li>
-              <span class="visual-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <rect x="3" y="6" width="14" height="11" rx="1.5" />
-                  <path d="M17 10l4-2.5v9L17 14" />
-                </svg>
-              </span>
-              <span>Webinar funnels</span>
-            </li>
-            <li>
-              <span class="visual-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <rect x="5" y="3" width="14" height="18" rx="1.5" />
-                  <path d="M9 8h6M9 12h6M9 16h3" />
-                </svg>
-              </span>
-              <span>Application funnels</span>
-            </li>
-            <li>
-              <span class="visual-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <rect x="3" y="6" width="18" height="12" rx="2" />
-                  <path d="M3 10h18" />
-                </svg>
-              </span>
-              <span>Checkout flows</span>
-            </li>
-            <li>
-              <span class="visual-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <path d="M6 5h9a3 3 0 0 1 3 3v12l-4-2-4 2-4-2V5z" />
-                  <path d="M9 9h6M9 13h4" />
-                </svg>
-              </span>
-              <span>Course and digital product funnels</span>
-            </li>
-          </ul>
-          <p>The goal is helping the right visitors become customers.</p>
-        </div>
-
-        <div class="offer">
-          <h3>Marketing Automation</h3>
-          <p>
-            Once someone enters your funnel, the experience shouldn’t depend on manual
-            work.
-          </p>
-          <p>We build automations that keep your business moving.</p>
-          <ul class="visual-list">
-            <li>
-              <span class="visual-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <rect x="3" y="6" width="18" height="12" rx="2" />
-                  <path d="M3 8l9 6 9-6" />
-                </svg>
-              </span>
-              <span>Email sequences</span>
-            </li>
-            <li>
-              <span class="visual-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <path d="M12 19V9" />
-                  <path d="M8 12c0-3 1.8-5 4-5s4 2 4 5" />
-                  <path d="M7 19h10" />
-                </svg>
-              </span>
-              <span>Lead nurturing</span>
-            </li>
-            <li>
-              <span class="visual-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <ellipse cx="12" cy="6" rx="7" ry="3" />
-                  <path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6" />
-                  <path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6" />
-                </svg>
-              </span>
-              <span>CRM automation</span>
-            </li>
-            <li>
-              <span class="visual-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <rect x="4" y="5" width="16" height="15" rx="1.5" />
-                  <path d="M8 3v4M16 3v4M4 10h16" />
-                </svg>
-              </span>
-              <span>Appointment booking</span>
-            </li>
-            <li>
-              <span class="visual-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <path d="M8 11V8a4 4 0 0 1 8 0v3" />
-                  <rect x="5" y="11" width="14" height="9" rx="2" />
-                </svg>
-              </span>
-              <span>Customer onboarding</span>
-            </li>
-            <li>
-              <span class="visual-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <path d="M6 9a6 6 0 0 1 12 0c0 5-3 6-3 9H9c0-3-3-4-3-9z" />
-                  <path d="M10 21h4" />
-                </svg>
-              </span>
-              <span>Internal notifications</span>
-            </li>
-            <li>
-              <span class="visual-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <path d="M5 12h10" />
-                  <path d="M12 7l5 5-5 5" />
-                  <path d="M5 7v10" />
-                </svg>
-              </span>
-              <span>Follow-up campaigns</span>
-            </li>
-            <li>
-              <span class="visual-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z" />
-                  <path d="M18 14l.8 2.2L21 17l-2.2.8L18 20l-.8-2.2L15 17l2.2-.8L18 14z" />
-                </svg>
-              </span>
-              <span>AI-assisted workflows</span>
-            </li>
-          </ul>
-          <p>
-            Every automation has one purpose: helping your business respond faster, stay
-            organized, and create a better experience for your customers.
-          </p>
-        </div>
-
-        <div class="offer">
-          <h3>Funnel Improvements</h3>
-          <p>Already have a website or funnel?</p>
-          <p>
-            We’ll help identify where people drop off, what’s slowing down your process,
-            and where automation can remove unnecessary work.
-          </p>
-          <p>Sometimes a few small improvements can make a significant difference.</p>
-        </div>
-      </section>
-
-      <section id="how-it-works" class="prose">
-        <h2>How Everything Works Together</h2>
-        <p>A great funnel doesn’t stop when someone fills out a form.</p>
-        <p>It continues through every interaction afterward.</p>
-        <p class="lead">Imagine this:</p>
-        <ol class="visual-list story-list">
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M12 4v10" />
-                <path d="M8 10l4 4 4-4" />
-                <path d="M5 18h14" />
-              </svg>
-            </span>
-            <span>A visitor downloads your guide.</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <rect x="3" y="6" width="18" height="12" rx="2" />
-                <path d="M3 8l9 6 9-6" />
-              </svg>
-            </span>
-            <span>They immediately receive a welcome email.</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M4 8h4v4H4zM10 8h4v4h-4zM16 8h4v4h-4z" />
-                <path d="M6 12v3h12v-3" />
-              </svg>
-            </span>
-            <span>
-              Over the next few days, they’re introduced to your business through
-              automated emails.
-            </span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <rect x="4" y="5" width="16" height="15" rx="1.5" />
-                <path d="M8 3v4M16 3v4M4 10h16" />
-              </svg>
-            </span>
-            <span>When they’re ready, they book a consultation.</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <ellipse cx="12" cy="6" rx="7" ry="3" />
-                <path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6" />
-                <path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6" />
-              </svg>
-            </span>
-            <span>Your CRM automatically creates their contact.</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <circle cx="12" cy="12" r="8" />
-                <path d="M12 8v4l3 2" />
-              </svg>
-            </span>
-            <span>Your calendar confirms the appointment.</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M6 9a6 6 0 0 1 12 0c0 5-3 6-3 9H9c0-3-3-4-3-9z" />
-                <path d="M10 21h4" />
-              </svg>
-            </span>
-            <span>Your team receives a notification.</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M8 11V8a4 4 0 0 1 8 0v3" />
-                <rect x="5" y="11" width="14" height="9" rx="2" />
-                <path d="M10 15h4" />
-              </svg>
-            </span>
-            <span>After becoming a customer, onboarding emails are sent automatically.</span>
-          </li>
-        </ol>
-        <p>Everyone knows what happens next.</p>
-        <ul class="visual-list result-list">
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <circle cx="12" cy="12" r="8" />
-                <path d="M8 12.5l2.5 2.5L16 9.5" />
-              </svg>
-            </span>
-            <span>No leads forgotten.</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <circle cx="12" cy="12" r="8" />
-                <path d="M8 12.5l2.5 2.5L16 9.5" />
-              </svg>
-            </span>
-            <span>No manual copying between software.</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <circle cx="12" cy="12" r="8" />
-                <path d="M8 12.5l2.5 2.5L16 9.5" />
-              </svg>
-            </span>
-            <span>No wondering who needs a follow-up.</span>
-          </li>
-        </ul>
-        <p class="emphasis">
-          That’s what happens when your funnel and automations work together.
-        </p>
-      </section>
-
-      <section id="why" class="prose">
-        <h2>Why Businesses Work With Techo</h2>
-        <p>There are plenty of people who can build a landing page.</p>
-        <p>There are plenty of people who can set up an automation.</p>
-        <p class="emphasis">Our focus is making sure everything connects.</p>
-        <p>Because a funnel without follow-up loses customers.</p>
-        <p>Automation without a good funnel automates poor results.</p>
-        <p>
-          We look at the entire customer journey and build the pieces so they support
-          each other, not operate as separate projects.
-        </p>
-        <p>The result is simple:</p>
-        <ul class="visual-list">
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <circle cx="12" cy="12" r="7" />
-                <circle cx="12" cy="12" r="3" />
-                <path d="M12 3v2M12 19v2M3 12h2M19 12h2" />
-              </svg>
-            </span>
-            <span>More qualified leads</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M13 3L6 14h5l-1 7 8-12h-5l0-6z" />
-              </svg>
-            </span>
-            <span>Faster follow-up</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M5 8h14M5 12h10M5 16h7" />
-                <path d="M16 14l3 3 3-3" />
-              </svg>
-            </span>
-            <span>Less repetitive work</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <circle cx="12" cy="12" r="8" />
-                <path d="M8 13c1 2 2.5 3 4 3s3-1 4-3" />
-                <path d="M9 10h.01M15 10h.01" />
-              </svg>
-            </span>
-            <span>Better customer experience</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M4 18V8l5 4 4-6 7 8" />
-                <path d="M16 14h4v4" />
-              </svg>
-            </span>
-            <span>A business that’s easier to operate as it grows</span>
-          </li>
+        <ul class="result-chips reveal">
+          <li>No leads forgotten</li>
+          <li>No manual copying between tools</li>
+          <li>No wondering who needs a follow-up</li>
         </ul>
       </section>
 
-      <section id="about" class="prose">
-        <h2>Why Clients Hire Me</h2>
-        <div class="about-layout">
-          <img
-            class="about-photo"
-            src="felix.png"
-            alt="Felix, founder of Techo Consulting"
-            width="320"
-            height="320"
-          />
-          <div class="about-copy">
+      <section id="why" class="why-band">
+        <div class="section-head reveal">
+          <h2>Built for leaders who get stuff done</h2>
+          <p>Plenty of people can build a page or an automation. Our focus is making sure everything connects.</p>
+        </div>
+        <div class="why-grid reveal">
+          <article>
+            <h3>More qualified leads</h3>
+            <p>Journeys designed so the right visitors take action—and stay engaged.</p>
+          </article>
+          <article>
+            <h3>Faster follow-up</h3>
+            <p>Respond in minutes, not days, without adding headcount.</p>
+          </article>
+          <article>
+            <h3>Less repetitive work</h3>
+            <p>Automate the busywork so your team can focus on conversations that close.</p>
+          </article>
+          <article>
+            <h3>Better customer experience</h3>
+            <p>Consistent, timely touchpoints from first click to long-term customer.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="about-visual reveal">
+          <img src="felix.png" alt="Felix, founder of Techo Consulting" width="480" height="480" />
+        </div>
+        <div class="about-copy reveal">
+          <h2>Why clients hire me</h2>
+          <p>
+            Not because I know GoHighLevel, HubSpot, or ActiveCampaign—
+            <strong>because I understand how all the pieces fit together.</strong>
+          </p>
+          <ul class="question-list">
+            <li>Where are potential customers dropping off?</li>
+            <li>What should happen after someone fills out a form?</li>
+            <li>Which parts of the process should be automated?</li>
+            <li>How do we make becoming a customer easier?</li>
+            <li>How do we reduce manual work without feeling robotic?</li>
+          </ul>
+          <p class="emphasis">
+            The software is a tool. The goal is a customer journey that’s easy for your
+            team to manage—and easy for customers to move through.
+          </p>
+        </div>
+      </section>
+
+      <section id="who-we-help" class="audience">
+        <div class="section-head reveal">
+          <h2>Who we help</h2>
+          <p>
+            Businesses with valuable products or services that want a more reliable way
+            to attract customers and manage them.
+          </p>
+        </div>
+        <ul class="audience-list reveal">
+          <li>Consultants</li>
+          <li>Coaches</li>
+          <li>Agencies</li>
+          <li>Professional services</li>
+          <li>Course creators</li>
+          <li>Memberships</li>
+          <li>Growing businesses</li>
+        </ul>
+      </section>
+
+      <section id="faq" class="faq">
+        <div class="section-head reveal">
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq-list reveal">
+          <details>
+            <summary>Do I need to know what software I want to use?</summary>
             <p>
-              They don’t hire me because I know GoHighLevel, HubSpot, or ActiveCampaign.
+              No. If you already have tools you’re happy with, we’ll work with them
+              whenever possible. If not, we’ll recommend solutions that fit your business
+              rather than forcing unnecessary complexity.
             </p>
-            <p class="emphasis">
-              They hire me because I understand how all the pieces fit together.
+          </details>
+          <details>
+            <summary>Can you improve an existing funnel instead of building a new one?</summary>
+            <p>
+              Absolutely. Sometimes improving what’s already there delivers better
+              results than starting over.
             </p>
-            <p>I think about questions like:</p>
-          </div>
+          </details>
+          <details>
+            <summary>Do you only build funnels?</summary>
+            <p>
+              No. The funnel is only part of the journey. We also build automations, CRM
+              workflows, follow-up sequences, onboarding, and integrations that keep
+              everything moving after someone becomes a lead.
+            </p>
+          </details>
+          <details>
+            <summary>Do you offer ongoing support?</summary>
+            <p>
+              Yes. We can continue improving your funnels and automations as your
+              business grows.
+            </p>
+          </details>
         </div>
-        <ul class="visual-list question-list">
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M12 19V9" />
-                <path d="M8 13l4-4 4 4" />
-                <path d="M5 5h14" />
-              </svg>
-            </span>
-            <span>Where are potential customers dropping off?</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <rect x="4" y="5" width="16" height="14" rx="1.5" />
-                <path d="M8 10h8M8 14h5" />
-              </svg>
-            </span>
-            <span>What should happen after someone fills out a form?</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <circle cx="8" cy="8" r="2.5" />
-                <circle cx="16" cy="16" r="2.5" />
-                <path d="M10 8h2.5a3.5 3.5 0 0 1 3.5 3.5V13" />
-              </svg>
-            </span>
-            <span>Which parts of the process should be automated?</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M5 12h10" />
-                <path d="M12 7l5 5-5 5" />
-                <path d="M5 7v10" />
-              </svg>
-            </span>
-            <span>How can we make it easier for someone to become a customer?</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M8 14c0-2.2 1.8-4 4-4s4 1.8 4 4" />
-                <circle cx="12" cy="8" r="2.5" />
-                <path d="M5 19c1.2-2.5 3.3-3.8 7-3.8s5.8 1.3 7 3.8" />
-              </svg>
-            </span>
-            <span>
-              How can we reduce manual work without making the experience feel robotic?
-            </span>
-          </li>
-        </ul>
-        <p>The software is simply a tool.</p>
-        <p class="emphasis">
-          The goal is building a customer journey that’s easy for your team to manage and
-          easy for your customers to move through.
-        </p>
       </section>
 
-      <section id="who-we-help" class="prose">
-        <h2>Who We Help</h2>
-        <p>
-          We work with businesses that already have valuable products or services and
-          want a more reliable way to attract customers and manage them.
-        </p>
-        <p>That includes:</p>
-        <ul class="visual-list">
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <rect x="6" y="7" width="12" height="10" rx="1.5" />
-                <path d="M9 7V5h6v2" />
-              </svg>
-            </span>
-            <span>Consultants</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M12 4l2.2 4.5L19 9.2l-3.5 3.4.8 4.9L12 15.4 7.7 17.5l.8-4.9L5 9.2l4.8-.7L12 4z" />
-              </svg>
-            </span>
-            <span>Coaches</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M4 18V9l4 2 4-4 4 3 4-3v11" />
-              </svg>
-            </span>
-            <span>Agencies</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M8 14c0-2.2 1.8-4 4-4s4 1.8 4 4" />
-                <circle cx="12" cy="8" r="2.5" />
-                <path d="M5 19c1.2-2.5 3.3-3.8 7-3.8s5.8 1.3 7 3.8" />
-              </svg>
-            </span>
-            <span>Professional service businesses</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M5 7h14v12H5z" />
-                <path d="M9 7V5h6v2" />
-                <path d="M9 12h6M9 15h4" />
-              </svg>
-            </span>
-            <span>Course creators</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <circle cx="9" cy="10" r="2.5" />
-                <circle cx="16" cy="11" r="2" />
-                <path d="M4 18c.8-2.2 2.4-3.3 5-3.3s4.2 1.1 5 3.3" />
-                <path d="M13.5 18c.5-1.5 1.6-2.3 3.5-2.3 1.5 0 2.5.6 3 1.8" />
-              </svg>
-            </span>
-            <span>Membership businesses</span>
-          </li>
-          <li>
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M4 18V9l8-5 8 5v9" />
-                <path d="M10 18v-5h4v5" />
-              </svg>
-            </span>
-            <span>Small and growing businesses</span>
-          </li>
-        </ul>
-        <p>
-          Whether you’re building from scratch or improving what you already have, we
-          help connect the pieces together.
-        </p>
-      </section>
-
-      <section id="faq" class="prose faq">
-        <h2>Frequently Asked Questions</h2>
-
-        <details>
-          <summary>Do I need to know what software I want to use?</summary>
-          <p>No.</p>
+      <section id="contact" class="cta-final">
+        <div class="cta-panel reveal">
+          <h2>Be fully there.<br />Miss nothing in your pipeline.</h2>
           <p>
-            If you already have tools you’re happy with, we’ll work with them whenever
-            possible.
+            Good marketing brings people in. Good automation makes sure they don’t fall
+            through the cracks. Let’s build something that works.
           </p>
-          <p>
-            If not, we’ll recommend solutions that fit your business rather than forcing
-            unnecessary complexity.
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formsubmit.co/felix@techoconsult.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="New inquiry from Techo Consulting" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" id="form-next" value="" />
+            <input
+              class="honeypot"
+              type="text"
+              name="_honey"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+            />
+            <label>
+              Name
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label class="full">
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <div class="form-actions">
+              <button class="btn btn-primary btn-lg" type="submit">Send inquiry</button>
+              <p id="form-status" class="form-status" role="status"></p>
+            </div>
+          </form>
+          <p class="form-note">
+            Messages go to
+            <a id="contact-email-link" href="mailto:felix@techoconsult.com">felix@techoconsult.com</a>.
+            You’ll complete a quick captcha before it sends.
           </p>
-        </details>
-
-        <details>
-          <summary>Can you improve an existing funnel instead of building a new one?</summary>
-          <p>Absolutely.</p>
-          <p>
-            Sometimes improving what’s already there delivers better results than
-            starting over.
-          </p>
-        </details>
-
-        <details>
-          <summary>Do you only build funnels?</summary>
-          <p>No.</p>
-          <p>
-            The funnel is only part of the customer journey. We also build the
-            automations, CRM workflows, follow-up sequences, onboarding processes, and
-            integrations that keep everything moving after someone becomes a lead.
-          </p>
-        </details>
-
-        <details>
-          <summary>Do you offer ongoing support?</summary>
-          <p>Yes.</p>
-          <p>
-            We can continue improving your funnels and automations as your business
-            grows.
-          </p>
-        </details>
-      </section>
-
-      <section id="contact" class="prose">
-        <h2>Let’s Build Something That Works</h2>
-        <p>Good marketing brings people in.</p>
-        <p>Good automation makes sure they don’t fall through the cracks.</p>
-        <p>
-          When your website, funnels, CRM, emails, and automations all work together,
-          your business becomes easier to grow—and easier to run.
-        </p>
-        <p>If that sounds like what you’re looking for, let’s talk.</p>
-        <p>
-          Send a message and it will be emailed to
-          <a id="contact-email-link" href="mailto:felix@techoconsult.com">felix@techoconsult.com</a>.
-          After you hit send, you will complete a quick captcha before it goes through.
-        </p>
-        <form
-          id="contact-form"
-          class="contact-form"
-          action="https://formsubmit.co/felix@techoconsult.com"
-          method="POST"
-        >
-          <input type="hidden" name="_subject" value="New inquiry from Techo Consulting" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_next" id="form-next" value="" />
-          <input
-            class="honeypot"
-            type="text"
-            name="_honey"
-            tabindex="-1"
-            autocomplete="off"
-            aria-hidden="true"
-          />
-          <label>
-            Name
-            <input type="text" name="name" autocomplete="name" required />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" autocomplete="email" required />
-          </label>
-          <label class="full">
-            Message
-            <textarea name="message" rows="6" required></textarea>
-          </label>
-          <div class="form-actions">
-            <button class="button" type="submit">Give us an inquiry</button>
-            <p id="form-status" class="form-status" role="status"></p>
-          </div>
-        </form>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; <span id="year"></span> Techo Consulting Inc.</p>
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <a class="logo" href="#home">
+          <span class="logo-mark" aria-hidden="true"></span>
+          Techo
+        </a>
+        <p>Sales funnels & marketing automations that connect.</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h3>Product</h3>
+          <a href="#what-we-build">What we build</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <a href="#about">About</a>
+          <a href="#who-we-help">Who we help</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h3>Connect</h3>
+          <a href="#contact">Book a call</a>
+          <a id="footer-email" href="mailto:felix@techoconsult.com">Email</a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Techo Consulting Inc.</p>
     </footer>
 
     <script src="script.js"></script>
