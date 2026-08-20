@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f1412" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title>Company Site</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="logo" href="#home">Company Site</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+      <nav id="site-nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <p class="eyebrow">Local preview</p>
+        <h1>A simple company homepage you can grow.</h1>
+        <p class="lede">
+          This is a starter site running on your computer. Swap in your name,
+          copy, and contact details whenever you are ready.
+        </p>
+        <a class="button" href="#contact">Get in touch</a>
+      </section>
+
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          We help teams ship clear, reliable work. This page is a placeholder
+          until you add the real story of the business.
+        </p>
+      </section>
+
+      <section id="services">
+        <h2>Services</h2>
+        <div class="cards">
+          <article>
+            <h3>Strategy</h3>
+            <p>Define the problem, the audience, and the next useful step.</p>
+          </article>
+          <article>
+            <h3>Delivery</h3>
+            <p>Turn a plan into a working site, process, or product.</p>
+          </article>
+          <article>
+            <h3>Support</h3>
+            <p>Keep things running with updates, ops, and a human point of contact.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Send a message and it will be emailed to
+          <a id="contact-email-link" href="mailto:felix@techoconsult.com">felix@techoconsult.com</a>.
+          After you hit send, you will complete a quick captcha before it goes through.
+        </p>
+        <form
+          id="contact-form"
+          class="contact-form"
+          action="https://formsubmit.co/felix@techoconsult.com"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New inquiry from Company Site" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" id="form-next" value="" />
+          <input
+            class="honeypot"
+            type="text"
+            name="_honey"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          />
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+          <label class="full">
+            Message
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="button" type="submit">Send inquiry</button>
+            <p id="form-status" class="form-status" role="status"></p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Company Site. Running locally.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
