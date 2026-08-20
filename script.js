@@ -1,5 +1,3 @@
-const CONTACT_EMAIL = "felix@techoconsult.com";
-
 const yearEl = document.getElementById("year");
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
@@ -50,17 +48,6 @@ if ("IntersectionObserver" in window && revealEls.length) {
   revealEls.forEach((el) => el.classList.add("visible"));
 }
 
-const emailLink = document.getElementById("contact-email-link");
-if (emailLink) {
-  emailLink.href = `mailto:${CONTACT_EMAIL}`;
-  emailLink.textContent = CONTACT_EMAIL;
-}
-
-const footerEmail = document.getElementById("footer-email");
-if (footerEmail) {
-  footerEmail.href = `mailto:${CONTACT_EMAIL}`;
-}
-
 const form = document.getElementById("contact-form");
 const statusEl = document.getElementById("form-status");
 const nextInput = document.getElementById("form-next");
@@ -81,7 +68,7 @@ if (nextInput) {
 
 const params = new URLSearchParams(window.location.search);
 if (params.get("sent") === "1") {
-  setStatus("Thanks — your inquiry was sent.", "success");
+  setStatus("Thanks. We’ll be in touch.", "success");
 }
 
 if (form) {
